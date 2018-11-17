@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Stats from './Stats';
+import Stopwatch from './Stopwatch';
 
 class Header extends Component {
   render() {
@@ -8,6 +9,7 @@ class Header extends Component {
         <header>
           <Stats players={this.props.players}/>
           <h1>{this.props.title}</h1>
+          <Stopwatch />
         </header>
       </div>
     );
