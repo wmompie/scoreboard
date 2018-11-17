@@ -3,6 +3,16 @@ import PropTypes from 'prop-types';
 import Counter from './Counter';
 
 class Player extends PureComponent {
+
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    score: PropTypes.number.isRequired,
+    index: PropTypes.number.isRequired,
+    removePlayer: PropTypes.func,
+    changeScore: PropTypes.func
+  };
+
   render() {
     const {
       name,
@@ -28,14 +38,5 @@ class Player extends PureComponent {
     );
   }
 }
-
-Player.propTypes = {
-  name: PropTypes.string,
-  id: PropTypes.number,
-  score: PropTypes.number,
-  index: PropTypes.number,
-  removePlayer: PropTypes.func,
-  changeScore: PropTypes.func
-};
 
 export default Player;
