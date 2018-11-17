@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import Counter from './Counter';
 
-class Player extends Component {
+class Player extends PureComponent {
   render() {
     return (
       <div className="player">
