@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 class Stats extends Component {
   render() {
-
     const totalPlayers = this.props.players.length;
     const totalPoints = this.props.players.reduce( (total, player) => {
       return total + player.score;

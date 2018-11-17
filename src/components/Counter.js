@@ -3,13 +3,16 @@ import React, {Component} from 'react';
 class Counter extends Component {
 
   render() {
-    let index = this.props.index;
-    
+    const {
+      index,
+      changeScore,
+      score
+    } = this.props;
     return (
       <div className="counter">
-        <button className="counter-action decrement" onClick={() => this.props.changeScore(index, -1)}> - </button>
-        <span className="counter-score">{this.props.score}</span>
-        <button className="counter-action increment" onClick={() => this.props.changeScore(index, 1)}> + </button>
+        <button className="counter-action decrement" onClick={() => changeScore(index, -1)}> - </button>
+        <span className="counter-score">{score}</span>
+        <button className="counter-action increment" onClick={() => changeScore(index, 1)}> + </button>
       </div>
     );
   }
