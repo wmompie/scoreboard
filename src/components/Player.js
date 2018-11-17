@@ -10,7 +10,11 @@ class Player extends Component {
           {this.props.name}
         </span>
 
-        <Counter />
+        <Counter
+          score={this.props.score}
+          index={this.props.index}
+          changeScore={this.props.changeScore}  
+        />
       </div>
     );
   }
