@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Counter from './Counter';
+import Icon from './Icon';
 
 class Player extends PureComponent {
 
@@ -10,7 +11,8 @@ class Player extends PureComponent {
     score: PropTypes.number.isRequired,
     index: PropTypes.number.isRequired,
     removePlayer: PropTypes.func,
-    changeScore: PropTypes.func
+    changeScore: PropTypes.func,
+    isHighScore: PropTypes.bool
   };
 
   render() {
@@ -20,12 +22,14 @@ class Player extends PureComponent {
       score,
       index,
       removePlayer,
-      changeScore
+      changeScore,
+      isHighScore
     } = this.props;
     return (
       <div className="player">
         <span className="player-name">
-          <button className="remove-player" onClick={ () => removePlayer(id)}>✖</button>
+          <button className="remove-player" onClick={() => removePlayer(id)}>✖</button>
+          <Icon isHighScore={isHighScore} />
           {name}
         </span>
 
