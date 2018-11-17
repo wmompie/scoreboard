@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class Stats extends Component {
   render() {
@@ -23,5 +24,11 @@ class Stats extends Component {
     );
   }
 }
+
+Stats.propTypes = {
+  players: PropTypes.arrayOf(PropTypes.shape({
+    score: PropTypes.number
+  }))
+};
 
 export default Stats;
