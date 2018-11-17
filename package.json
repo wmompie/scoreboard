@@ -25,10 +25,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wmompie/scoreboard.git"
-  },
+  "repository": "git+https://github.com/wmompie/scoreboard.git",
   "author": "William Mompie",
   "license": "ISC",
   "bugs": {

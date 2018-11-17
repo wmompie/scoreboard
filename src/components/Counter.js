@@ -4,18 +4,18 @@ class Counter extends Component {
 
   state = {
     score: 0
-  }
+  };
 
   decrementScore = () => {
-    this.setState({
-      score: this.state.score - 1
-    });
+    this.setState( prevState => ({
+      score: prevState.score - 1
+    }));
   }
 
   incrementScore = () => {
-    this.setState({
-      score: this.state.score + 1
-    });
+    this.setState( prevState => ({
+      score: prevState.score + 1
+    }));
   }
 
   render() {
