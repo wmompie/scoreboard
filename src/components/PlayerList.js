@@ -8,8 +8,7 @@ const PlayerList = () => {
       {({players}) => (
         <React.Fragment>
           {players.map((player, index) =>
-            <Player 
-              {...player}
+            <Player
               key={player.id.toString()}
               index={index}
             />
