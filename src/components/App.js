@@ -4,7 +4,6 @@ import PlayerList from './PlayerList';
 import AddPlayerForm from './AddPlayerForm';
 
 class App extends Component {
-
   render() {
     return (
       <div className="scoreboard">

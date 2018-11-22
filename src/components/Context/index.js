@@ -70,6 +70,7 @@ export class Provider extends Component {
      return null;
    }
 
+
   render() {
     return (
       <ScoreboardContext.Provider value={{
@@ -77,7 +78,8 @@ export class Provider extends Component {
         actions: {
           changeScore: this.handleScoreChange,
           removePlayer: this.handleRemovePlayer,
-          addPlayer: this.handleAddPlayer
+          addPlayer: this.handleAddPlayer,
+          highScore: this.getHighScore
           }
         }}>
         {this.props.children}
