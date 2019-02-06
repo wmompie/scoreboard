@@ -10,6 +10,7 @@ class App extends Component {
         <Header />
         <PlayerList />
         <AddPlayerForm />
+        < />
       </div>
     );
   }
